@@ -12,7 +12,7 @@ Example for `legal_logging`:
 local Module = 'legal_logging.lua'
 local URL = 'https://raw.githubusercontent.com/raymonable/vsb-libraries/main/lib/'..Module
 local Success, Module = pcall(function()
-  return loadstring(URL)()
+  return loadstring(game:GetService('HttpService'):GetAsync(URL))()
 end)
 if Success then
   local Logger = Module('SERVER')
