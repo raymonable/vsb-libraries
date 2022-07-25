@@ -1,3 +1,11 @@
+--[[
+
+vsb-libraries/lib/legal_logging.lua
+
+returns an rbxscriptsignal
+
+--]]
+
 return function(Channel)
     for _, Object in pairs(owner.PlayerGui:GetChildren()) do
         if Object.Name == "ChatSend" then 
